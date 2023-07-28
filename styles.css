@@ -66,7 +66,7 @@ a:link {
 .product {
     width: calc(100% - 20px); /* Set a maximum width for each product div - minus 20px for spacing */
     max-width: 400px; /* Limit the maximum width of each product */
-    height: 350px; /* Set a fixed height for each product div */
+    height: 300px; /* Set a fixed height for each product div */
     margin: 10px; /* Add spacing around the products */
     padding: 5px;
     border: 0px transparent #000000;
