@@ -1,0 +1,269 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the red banner above the navigation bar */
+.disclaimer-banner {
+    background-color: rgb(163, 3, 3); /* Red color */
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 2px;
+}
+
+/* Style the navigation bar */
+header {
+    background-color: #343434;
+    color: #fff;
+    padding: 30px;
+    text-align: center; /* Center the content horizontally */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav li a:hover {
+    text-decoration: none; /* Remove underline on hover */
+}
+
+h1 {
+    font-size: 40px;
+    margin: 0; /* Remove default margin for h1 element */
+}
+
+h2{
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+h3{
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+a:link {
+    text-decoration: none;
+  }
+
+/* Style individual product div for both mobile and desktop */
+.product {
+    width: calc(100% - 20px); /* Set a maximum width for each product div - minus 20px for spacing */
+    max-width: 400px; /* Limit the maximum width of each product */
+    height: 350px; /* Set a fixed height for each product div */
+    margin: 10px; /* Add spacing around the products */
+    padding: 5px;
+    border: 0px transparent #000000;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a small shadow to the product boxes */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product img {
+    max-width: 100%;
+    max-height: 150px; /* Limit the image height to 150px - decrease this value to reduce image height */
+    object-fit: contain; /* Maintain aspect ratio and fit the entire image within the container */
+}
+
+.product h2 {
+    margin-top: 10px;
+    margin-bottom: 0; /* Remove bottom margin for h2 element to reduce white space below prices */
+    color: #000; /* Set the product text color to black */
+    text-decoration: none; /* Remove underline from h2 element */
+}
+
+.product p {
+    margin-top: 5px;
+    margin-bottom: 10px; /* Add margin at the bottom of the p element to create space between price and description */
+    color: #000; /* Set the product text color to black */
+    text-decoration: none; /* Remove underline from p element */
+}
+
+/* Style the content container */
+.content-container {
+    max-width: 1000px;
+    margin: 0 auto; /* Center the container horizontally */
+    display: flex;
+    flex-wrap: wrap; /* Allow the images to wrap when the container width is smaller */
+    justify-content: space-between; /* Create spacing between images */
+}
+
+/* Style the product section */
+.product-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1300px; /* Set a maximum width for the product section */
+    margin: 0 auto; /* Center the product section horizontally */
+    padding: 10px; /* Add some spacing around the products */
+}
+
+/* Style the search bar and button */
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Increase the size of the search input */
+.search-form input {
+    padding: 10px; /* Adjust the padding to make it bigger */
+    font-size: 16px; /* Adjust the font size */
+    width: 400px; /* Set a fixed width for the input field */
+    max-width: 100%; /* Ensure it doesn't exceed the available width */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Styles for the search button */
+#searchButton {
+    padding: 10px 20px; /* Adjust padding to make it bigger */
+    font-size: 16px; /* Adjust the font size */
+    background-color: #4CAF50; /* Green color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#searchButton:hover {
+    background-color: #45a049; /* Darker green color on hover */
+}
+
+.product-list li {
+    margin: 5px 0;
+}
+
+/* Style the categories button */
+.categories-button {
+    display: block;
+    margin: 20px auto; /* Center the button horizontally */
+    padding: 20px 30px;
+    background-color: #007bff; /* Blue color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.categories-button:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+}
+
+/* Style the dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    z-index: 1;
+    left: 50%; /* Center the dropdown menu horizontally */
+    transform: translateX(-50%); /* Center the dropdown menu relative to its parent */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add drop shadow to the dropdown content */
+}
+
+/* Style the dropdown links */
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Style the dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown content when the button is clicked */
+.show {
+    display: block;
+}
+
+/* Style the active category link */
+.dropdown-content a.active {
+    background-color: #007bff; /* Blue color */
+    color: #fff;
+}
+
+/* Style the main text container */
+.parallax-text {
+    text-align: center; /* Center the content horizontally */
+    padding-top: 200px; /* Add top padding to position the text */
+    padding-bottom: 50px; /* Add bottom padding for spacing */
+}
+
+/* Style the green button */
+.green-button {
+    display: inline-block;
+    padding: 20px 30px;
+    background-color: #45a049; /* Green color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.green-button:hover {
+    background-color: #45a049; /* Darker green color on hover */
+}
+
+/* Style the parallax container */
+.parallax-container {
+    overflow-x: hidden; /* Hide horizontal overflow */
+    position: relative; /* Set position relative for absolute positioning */
+    height: 100vh; /* Set the height to fill the viewport */
+}
+
+/* Style the parallax images */
+.parallax-image {
+    position: relative;
+    height: 100%;
+}
+
+.parallax-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* Maintain aspect ratio and fill the container without stretching */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Move the images to the background */
+}
+
+/* Add parallax scrolling effect */
+.parallax-image:nth-child(odd) img {
+    transform: translate3d(0, 0, 0); /* Move the first image normally */
+}
+
+.parallax-image:nth-child(even) img {
+    transform: translate3d(0, -50%, 0); /* Move the second image up by 50% */
+}
+
+/* Add padding to footer */
+footer {
+    padding: 20px;
+}
