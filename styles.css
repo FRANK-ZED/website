@@ -42,31 +42,37 @@ nav li a:hover {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 60px;
     margin: 0; /* Remove default margin for h1 element */
+    color: white;
 }
 
 h2{
-    font-size: 20px;
+    font-size: 25px;
     text-decoration: none;
     color: #000;
+    margin: 5px 0; /* Decrease the margin between h3 and the rest of the content */
 }
 
 h3{
-    font-size: 20px;
+    font-size: 25px;
     text-decoration: none;
     color: #000;
+    margin: 5px 0; /* Decrease the margin between h3 and the rest of the content */
+    color: #ed2525; /* Blue color for the price */
+    border-top: 1px solid #ccc;
+    padding-top: 5px;
 }
 
 a:link {
     text-decoration: none;
-  }
+}
 
 /* Style individual product div for both mobile and desktop */
 .product {
     width: calc(100% - 20px); /* Set a maximum width for each product div - minus 20px for spacing */
-    max-width: 400px; /* Limit the maximum width of each product */
-    height: 300px; /* Set a fixed height for each product div */
+    max-width: 350px; /* Limit the maximum width of each product */
+    height: 280px; /* Set a fixed height for each product div */
     margin: 10px; /* Add spacing around the products */
     padding: 5px;
     border: 0px transparent #000000;
@@ -78,10 +84,26 @@ a:link {
     justify-content: space-between;
 }
 
-.product img {
+/* Style the product images container */
+.product-images {
+    display: flex;
+    justify-content: space-around; /* Decrease the space between images */
     max-width: 100%;
-    max-height: 150px; /* Limit the image height to 150px - decrease this value to reduce image height */
-    object-fit: contain; /* Maintain aspect ratio and fit the entire image within the container */
+}
+
+/* Style the product images */
+.product-images img {
+    width: auto;
+    height: 120px;
+    object-fit: contain;
+    border-radius: 5px;
+    margin: 10px; /* Add some margin to separate the images */
+}
+
+/* Add a hover effect on the product boxes */
+.product:hover {
+    transform: translateY(-5px); /* Move the box up slightly on hover */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow on hover */
 }
 
 .product h2 {
@@ -112,7 +134,7 @@ a:link {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 1300px; /* Set a maximum width for the product section */
+    max-width: 1150px; /* Set a maximum width for the product section */
     margin: 0 auto; /* Center the product section horizontally */
     padding: 10px; /* Add some spacing around the products */
 }
@@ -224,6 +246,7 @@ a:link {
     text-decoration: none;
     border-radius: 5px;
     margin-top: 10px;
+    font-size: 50px;
 }
 
 .green-button:hover {
@@ -245,8 +268,7 @@ a:link {
 
 .parallax-image img {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 100%;
     object-fit: cover; /* Maintain aspect ratio and fill the container without stretching */
     position: absolute;
     top: 0;
@@ -254,16 +276,43 @@ a:link {
     z-index: -1; /* Move the images to the background */
 }
 
-/* Add parallax scrolling effect */
-.parallax-image:nth-child(odd) img {
-    transform: translate3d(0, 0, 0); /* Move the first image normally */
-}
-
-.parallax-image:nth-child(even) img {
-    transform: translate3d(0, -50%, 0); /* Move the second image up by 50% */
-}
-
 /* Add padding to footer */
 footer {
     padding: 20px;
 }
+
+/* Style the filter button */
+.filter-button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #ff9800; /* Orange color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .filter-button:hover {
+    background-color: #f57c00; /* Darker orange color on hover */
+  }
+  
+  /* Style the filter dropdown content */
+  .filter-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Show the filter dropdown content when the button is clicked */
+  .show-filter {
+    display: block;
+  }
