@@ -9,7 +9,7 @@ body, html {
     background-color: rgb(163, 3, 3); /* Red color */
     color: #fff; /* White text color */
     text-align: center;
-    padding: 2px;
+    padding: 1px;
 }
 
 /* Style the navigation bar */
@@ -24,6 +24,11 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.disclaimer-text{
+    font-size: 14px;
+    font-family: 'PT Sans', sans-serif;
 }
 
 nav li {
@@ -64,15 +69,45 @@ h3{
     padding-top: 5px;
 }
 
+h4{
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+    color: #000;
+    margin: 5px 0;
+    font-family: 'PT Sans', sans-serif;
+}
+h5{
+    text-align: center;
+    font-size: 25px;
+    color: #000; 
+    margin: 5px 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.supportLink{
+    text-align: center;
+    font-size: 55px;
+    margin: 5px 0;
+    font-family: 'PT Sans', sans-serif;
+    text-decoration: underline;
+}
+
+.qrcode{
+    width: 300px;
+    height: auto;
+}
+
 a:link {
     text-decoration: none;
+    font-family: 'PT Sans', sans-serif;
 }
 
 /* Style individual product div for both mobile and desktop */
 .product {
     width: calc(100% - 20px); /* Set a maximum width for each product div - minus 20px for spacing */
     max-width: 350px; /* Limit the maximum width of each product */
-    height: 280px; /* Set a fixed height for each product div */
+    height: 290px; /* Set a fixed height for each product div */
     margin: 10px; /* Add spacing around the products */
     padding: 5px;
     border: 0px transparent #000000;
