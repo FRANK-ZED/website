@@ -47,7 +47,7 @@ nav li a:hover {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 45px;
     margin: 0; /* Remove default margin for h1 element */
     color: white;
 }
@@ -317,43 +317,6 @@ footer {
     padding: 20px;
 }
 
-/* Style the filter button */
-.filter-button {
-    display: block;
-    margin: 10px auto;
-    padding: 10px 20px;
-    background-color: #ff9800; /* Orange color */
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  .filter-button:hover {
-    background-color: #f57c00; /* Darker orange color on hover */
-  }
-  
-  /* Style the filter dropdown content */
-  .filter-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    z-index: 1;
-    left: 50%;
-    transform: translateX(-50%);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Show the filter dropdown content when the button is clicked */
-  .show-filter {
-    display: block;
-  }
-
-
   .container {
     display: flex;
     flex-direction: column;
@@ -395,6 +358,15 @@ footer {
     margin-bottom: 10px;
 }
 
+.follow-link {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
 .qr-code-container {
     margin-top: 20px;
 }
