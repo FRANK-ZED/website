@@ -6,7 +6,7 @@ body, html {
 
 /* Style the red banner above the navigation bar */
 .disclaimer-banner {
-    background-color: rgb(163, 3, 3); /* Red color */
+    background-color: rgb(177, 0, 0); /* Red color */
     color: #fff; /* White text color */
     text-align: center;
     padding: 1px;
@@ -124,6 +124,7 @@ a:link {
     display: flex;
     justify-content: space-around; /* Decrease the space between images */
     max-width: 100%;
+
 }
 
 /* Style the product images */
@@ -131,7 +132,7 @@ a:link {
     width: auto;
     height: 120px;
     object-fit: contain;
-    border-radius: 5px;
+    border-radius: 10px;
     margin: 10px; /* Add some margin to separate the images */
 }
 
@@ -351,3 +352,50 @@ footer {
   .show-filter {
     display: block;
   }
+
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.header {
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 18px;
+    text-align: center;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.support-section {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.support-link {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.qr-code-container {
+    margin-top: 20px;
+}
+

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panda Cheap - Products</title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,9 +13,6 @@
 </head>
 
 <body>
-    <div class="disclaimer-banner">
-        <p class = "disclaimer-text">Disclaimer this website is not finished and we are adding more products all the time please be patient with us. we would love your support</p1>
-    </div>
     <header>
         <nav>
             <ul>
@@ -24,6 +22,11 @@
             </ul>
         </nav>
     </header>
+    <!-- Disclaimer Banner -->
+    <div class="disclaimer-banner">
+        <p class="disclaimer-text">Disclaimer: This website is under development, and we are continuously adding more products. Your patience and support are highly appreciated.</p>
+    </div>
+
 
     <main>
         <!-- Search bar -->
@@ -47,12 +50,6 @@
             </div>
         </div>
         
-       <!-- Category and Brands Dropdowns  <div class="sort-buttons">
-            <button class="sort-button" data-sort="alphabetical">Sort by Name</button>
-            <button class="sort-button" data-sort="low-to-high">Price: Low to High</button>
-            <button class="sort-button" data-sort="high-to-low">Price: High to Low</button>
-          </div>
-          -->
 
           
         <div class="product-section">
@@ -444,9 +441,9 @@
             <a href="https://pandabuy.page.link/CR839cjCGM4RdFpE8" target="_blank" class="product shoes">
                 <div class="product-content">
                     <div class="product-images">
-                        <img src="Images\Products\shoes\Rick Owens.jpeg"
+                        <img src="Images\Products\shoes\Rick Owens.jpg"
                             alt="Rick Owens">
-                        <img src="Images\Products\shoes\Rick Owens QC.jpeg"
+                        <img src="Images\Products\shoes\Rick Owens QC.jpg"
                             alt="Rick Owens">
                     </div>
                     <div class="product-text">
@@ -460,9 +457,9 @@
             <a href="https://pandabuy.page.link/NpjTY4SQXoHxXZKb8" target="_blank" class="product shoes">
                 <div class="product-content">
                     <div class="product-images">
-                        <img src="Images\Products\shoes\Rick Owens Low.jpeg"
+                        <img src="Images\Products\shoes\Rick Owens Low.jpg"
                             alt="Rick Owens Low">
-                        <img src="Images\Products\shoes\Rick Owens Low QC.jpeg"
+                        <img src="Images\Products\shoes\Rick Owens Low QC.jpg"
                             alt="Rick Owens Low">
                     </div>
                     <div class="product-text">
@@ -478,7 +475,7 @@
                     <div class="product-images">
                         <img src="Images\Products\shoes\Crocs.jpeg"
                             alt="Crocs">
-                        <img src="Images\Products\shoes\Crocs QC.jpeg"
+                        <img src="Images\Products\shoes\Crocs QC.jpg"
                             alt="Crocs">
                     </div>
                     <div class="product-text">
@@ -493,7 +490,7 @@
             <a href="https://pandabuy.page.link/fYRL3C5QVeeXyqy77" target="_blank" class="product hoodies">
                 <div class="product-content">
                     <div class="product-images">
-                        <img src="Images\Products\Hoodies\Sicko Pain Hoodie Brown.jpg" alt="Sicko Pain Hoodie Brown">
+                        <img src="Images\Products\Hoodies\Sicko Pain Hoodie Brown.jpeg" alt="Sicko Pain Hoodie Brown">
                         <img src="Images\Products\Hoodies\Sicko Pain Hoodie Brown QC.jpg" alt="Sicko Pain Hoodie Brown">
                     </div>
                     <div class="product-text">
@@ -537,7 +534,7 @@
                 <div class="product-content">
                     <div class="product-images">
                         <img src="Images\Products\Socks\Nike Socks (21 Colors).jpeg" alt="Nike Socks (21 Colors)">
-                        <img src="Images\Products\Socks\Nike Socks (21 Colors) QC.jpeg" alt="Nike Socks (21 Colors)">
+                        <img src="Images\Products\Socks\Nike Socks (21 Colors) QC.jpg" alt="Nike Socks (21 Colors)">
                     </div>
                     <div class="product-text">
                         <h2>Nike Socks (21 Colors)</h2>
@@ -576,7 +573,14 @@
 
             <!-- Add more products here as needed -->
         </div>
+        <p id="noMatchText" style="display: none; text-align: center; font-size: 1.2rem; margin-top: 20px;">Sorry, we couldn't find a match.</p>
     </main>
+
+    <footer>
+        <p>© 2023 Panda.cheap is in no way affiliated with the Pandabuy.com website or brand, the site simply serves the purpose of locating products found on the Pandabuy website.
+             Disclaimer: Please note that this website contains affiliate links, which means I may earn a small commission from qualifying purchases made through those links.
+              This commission helps support the maintenance and development of the website at no additional cost to you. Thank you for your support!</p>
+    </footer>
 
     <!-- JavaScript code for search functionality -->
     <script src="script.js"></script>
