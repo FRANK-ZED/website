@@ -197,7 +197,7 @@ a:link {
 #searchButton {
     padding: 10px 20px; /* Adjust padding to make it bigger */
     font-size: 16px; /* Adjust the font size */
-    background-color: #4CAF50; /* Green color */
+    background-color: #007bff; /* Blue color */
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -370,4 +370,3 @@ footer {
 .qr-code-container {
     margin-top: 20px;
 }
-
