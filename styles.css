@@ -402,6 +402,9 @@ footer {
     font-size: 26px;
     cursor: pointer;
     font-family: 'PT Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   #darkModeButton:hover {
