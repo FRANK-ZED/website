@@ -28,7 +28,7 @@ body {
 
 /* Style the red banner above the navigation bar */
 .disclaimer-banner {
-    background-color: rgb(90, 148, 179); /* Red color */
+    background-color: rgb(159, 0, 0); /* Red color */
     color: #ffffff; /* White text color */
     text-align: center;
     padding: 1px;
@@ -393,18 +393,24 @@ footer {
     margin-top: 20px;
 }
 
+.darkmodediv {
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 15px;
+}
+
 /* Style for the Toggle Dark Mode button */
 #darkModeButton {
-    background-color: #ffffff;
-    color: #000000;
+    margin-top: 20px; /* Add some top margin for spacing */
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
     border: none;
-    padding: 10px 20px;
-    font-size: 26px;
     cursor: pointer;
-    font-family: 'PT Sans', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
+    border-radius: 5px;
+    /* Add any other styles you want for the button */
   }
   
   #darkModeButton:hover {
