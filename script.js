@@ -87,4 +87,30 @@ document.addEventListener("DOMContentLoaded", function () {
   // Call filterProducts initially to display all products
   filterProducts();
   
+  
+
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const darkModeButton = document.getElementById("darkModeButton");
+    const body = document.body;
+  
+    function toggleDarkMode() {
+      body.classList.toggle("dark-mode");
+      // Check if dark mode is enabled and store the preference in local storage
+      const isDarkModeEnabled = body.classList.contains("dark-mode");
+      localStorage.setItem("darkModeEnabled", isDarkModeEnabled);
+    }
+  
+    darkModeButton.addEventListener("click", toggleDarkMode);
+  
+    // Function to check the user's dark mode preference and apply dark mode if needed
+    function applyDarkModePreference() {
+      const isDarkModeEnabled = localStorage.getItem("darkModeEnabled") === "true";
+      if (isDarkModeEnabled) {
+        body.classList.add("dark-mode");
+      }
+    }
+  
+    // Apply the dark mode preference on page load
+    applyDarkModePreference();
+  });

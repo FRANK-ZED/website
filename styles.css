@@ -1,20 +1,42 @@
+:root {
+    --background-color: #ffffff;  /* Light mode background color */
+    --text-color: #000000;        /* Light mode text color */
+    --h2-color: #333333;          /* Light mode h2 text color */
+    --product-border: none;       /* Light mode product border */
+  }
+  
+  .dark-mode {
+    --background-color: #1a1a1a; /* Dark mode background color */
+    --text-color: #ffffff;       /* Dark mode text color */
+    --h2-color: #f1f1f1;         /* Dark mode h2 text color */
+    --product-border: 1px solid #b5b5b5; /* Dark mode product border */
+  }
+
+
 /* Reset some default styles */
-body, html {
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
     margin: 0;
     padding: 0;
 }
 
 /* Style the red banner above the navigation bar */
 .disclaimer-banner {
-    background-color: rgb(177, 0, 0); /* Red color */
-    color: #fff; /* White text color */
+    background-color: rgb(90, 148, 179); /* Red color */
+    color: #ffffff; /* White text color */
     text-align: center;
     padding: 1px;
 }
 
 /* Style the navigation bar */
 header {
-    background-color: #343434;
+    background-color: #0a2052;
     color: #fff;
     padding: 30px;
     text-align: center; /* Center the content horizontally */
@@ -49,13 +71,13 @@ nav li a:hover {
 h1 {
     font-size: 45px;
     margin: 0; /* Remove default margin for h1 element */
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 h2{
+    color: black;
     font-size: 25px;
     text-decoration: none;
-    color: #000;
     margin: 5px 0; /* Decrease the margin between h3 and the rest of the content */
 }
 
@@ -110,7 +132,7 @@ a:link {
     height: 290px; /* Set a fixed height for each product div */
     margin: 10px; /* Add spacing around the products */
     padding: 5px;
-    border: 0px transparent #000000;
+    border: var(--product-border);
     border-radius: 10px;
     text-align: center;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a small shadow to the product boxes */
@@ -143,9 +165,9 @@ a:link {
 }
 
 .product h2 {
+    color: var(--h2-color);
     margin-top: 10px;
     margin-bottom: 0; /* Remove bottom margin for h2 element to reduce white space below prices */
-    color: #000; /* Set the product text color to black */
     text-decoration: none; /* Remove underline from h2 element */
 }
 
@@ -277,7 +299,7 @@ a:link {
 .green-button {
     display: inline-block;
     padding: 20px 30px;
-    background-color: #45a049; /* Green color */
+    background-color: #007bff; /* Green color */
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -286,7 +308,7 @@ a:link {
 }
 
 .green-button:hover {
-    background-color: #45a049; /* Darker green color on hover */
+    background-color: #0250a4;
 }
 
 /* Style the parallax container */
@@ -370,3 +392,30 @@ footer {
 .qr-code-container {
     margin-top: 20px;
 }
+
+/* Style for the Toggle Dark Mode button */
+#darkModeButton {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 26px;
+    cursor: pointer;
+    font-family: 'PT Sans', sans-serif;
+  }
+  
+  #darkModeButton:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  /* Style for the button when in Dark Mode */
+  .dark-mode #darkModeButton {
+    background-color: #1a1a1a;
+    color: #ffffff;
+  }
+  
+  .dark-mode #darkModeButton:hover {
+    background-color: #ffffff;
+    color: #000000;
+  }
