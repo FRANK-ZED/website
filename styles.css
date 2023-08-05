@@ -64,8 +64,26 @@ nav li {
 nav li a {
     color: #fff;
     text-decoration: none;
-    padding: 0px 0px;
 }
+ /* Media query for smaller screens (e.g., mobile) */
+ @media (max-width: 767px) {
+    nav li a {
+      font-size: 20px; /* Adjust font size for mobile screens */
+    }
+ }
+  /* Media query for smaller screens (e.g., mobile) */
+  @media (max-width: 400px) {
+    nav li a {
+      font-size: 13px; /* Adjust font size for mobile screens */
+    }
+ }
+
+ /* Media query for smaller screens (e.g., mobile) */
+ @media (max-width: 310px) {
+    nav li a {
+      font-size: 10px; /* Adjust font size for mobile screens */
+    }
+ }
 
 nav li a:hover {
     text-decoration: none; /* Remove underline on hover */
@@ -93,7 +111,6 @@ h2{
 h3{
     font-size: 25px;
     text-decoration: none;
-    color: #000;
     margin: 5px 0; /* Decrease the margin between h3 and the rest of the content */
     color: #ed2525; /* Blue color for the price */
     border-top: 1px solid #ccc;
