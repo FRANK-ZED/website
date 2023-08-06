@@ -74,7 +74,7 @@ nav li a {
   /* Media query for smaller screens (e.g., mobile) */
   @media (max-width: 400px) {
     nav li a {
-      font-size: 13px; /* Adjust font size for mobile screens */
+      font-size: 12px; /* Adjust font size for mobile screens */
     }
  }
 
@@ -97,7 +97,7 @@ h1 {
 }
 
 .welcomeText{
-    font-size: 45px;
+    font-size: 40px;
     margin: 0; /* Remove default margin for h1 element */
     color: white;
 }
