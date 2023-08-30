@@ -14,26 +14,35 @@
 </head>
 
 <body>
-    <header>
-        <nav>
+    <div class="header-wrapper">
+        <header>
+            <div class="nav-container">
+                <button class="burger-menu" onclick="toggleMenu()">☰</button>
+                <div class="logo">
+                    <button id="theme-toggle" class="logo-button">
+                        <img id="theme-icon" src="Images\moon-regular-24.png" alt="Toggle Theme">
+                    </button>
+                    <!-- Replace with your logo image if you have one -->
+                    <span><a class="logoText" href="index.html">PandaBuy.Cheap</a></span>
+                </div>
+            </div>
+        </header>
+        <div class="nav-links">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="products.html" class="current-page-bar">Products</a></li>
                 <li><a href="help.html" class="current-page-bar">Help</a></li>
                 <li><a href="support.html" class="current-page-bar">Support</a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </div>
 
     <main>
-        <div class = "darkmodediv">
-            <button id="darkModeButton">Toggle Dark Mode</button>
-        </div>
-        <br>
+        
         <!-- Search bar -->
         <div class="search-center">
             <div class="search-container">
-                <h1 class="searchText"> Find a Product:</h1>
+                <h1 class="searchText"> Find a Product</h1>
                 <form action="#" class="search-form">
                     <input type="text" name="search" id="searchInput" placeholder="Search...">
                     <button type="button" id="searchButton"><i class = "fa fa-search" aria-hidden="true"></i></button>

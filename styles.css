@@ -16,6 +16,7 @@
     --searchText-color: #ffffff;
   }
 
+
 /* Reset some default styles */
 html{
     margin: 0;
@@ -29,6 +30,10 @@ body {
     padding: 0;
 }
 
+.homepage{
+    overflow: hidden;
+}
+
 /* Style the red banner above the navigation bar */
 .disclaimer-banner {
     background-color: rgb(159, 0, 0); /* Red color */
@@ -37,12 +42,130 @@ body {
     padding: 1px;
 }
 
-/* Style the navigation bar */
-header {
-    background-color: #0a2052;
-    color: #fff;
+
+.header-wrapper {
+    background-color: #198ac3; /* Same as header */
+    position: sticky;
+    top: 0;
+    z-index: 2000;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 30px;
-    text-align: center; /* Center the content horizontally */
+}
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.burger-menu {
+    display: block; /* Show on both mobile and desktop */
+    font-size: 30px; /* Increase the size for desktop */
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+.nav-links {
+    display: none; /* Initially hidden */
+    background-color: #1a3a75; /* Lighter shade */
+    width: 100%;
+    position: relative; /* Relative to header-wrapper */
+}
+
+.nav-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: block; /* Change to block */
+    margin: 10px 0; /* Add some vertical margin */
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px; /* Increase the size for desktop */
+    padding: 10px; /* Add some padding */
+}
+
+.nav-links.show {
+    display: block; /* Show when burger menu is clicked */
+}
+
+/* Media Query for Desktop */
+@media (min-width: 768px) {
+    .header {
+        padding: 40px; /* Increase padding */
+    }
+
+    .burger-menu {
+        font-size: 40px; /* Increase menu button size */
+    }
+
+    .nav-links li a {
+        font-size: 24px; /* Increase nav link text size */
+        padding: 15px; /* Increase padding */
+    }
+
+    .logoText{
+        font-size: 30px;
+        margin: 0;
+        margin-right: 10px;
+        color: white;
+    }
+
+}
+
+
+.logo {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+}
+.logoText{
+    font-size: 25px;
+    margin: 0;
+    padding-right: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.logoText :hover{
+    text-decoration: none;
+    color: white;
+}
+
+.logo-button {
+    background-color: transparent;  /* You can change this */
+    border: none;
+    color: #0a2052;  /* You can change this */
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.logo-button img {
+    background-color: transparent;
+    
+}
+
+/* For larger screens */
+@media (min-width: 768px) {
+    .logo-button {
+        padding: 10px 20px;
+    }
 }
 
 nav ul {
@@ -52,12 +175,12 @@ nav ul {
 }
 
 .disclaimer-text{
-    font-size: 14px;
+    font-size: 18px;
     font-family: 'PT Sans', sans-serif;
 }
 
 nav li {
-    display: inline-block;
+    display: flex;
     margin-right: 20px;
 }
 
@@ -69,6 +192,17 @@ nav li a {
  @media (max-width: 767px) {
     nav li a {
       font-size: 20px; /* Adjust font size for mobile screens */
+    
+    }
+    .disclaimer-text{
+        font-size: 12px;
+        font-family: 'PT Sans', sans-serif;
+    }
+    .logoText{
+        font-size: 15px;
+        margin: 0;
+        padding-right: 10px;
+        color: white;
     }
  }
   /* Media query for smaller screens (e.g., mobile) */
@@ -78,12 +212,7 @@ nav li a {
     }
  }
 
- /* Media query for smaller screens (e.g., mobile) */
- @media (max-width: 310px) {
-    nav li a {
-      font-size: 10px; /* Adjust font size for mobile screens */
-    }
- }
+
 
 nav li a:hover {
     text-decoration: none; /* Remove underline on hover */
@@ -221,6 +350,7 @@ a:link {
     display: flex;
     flex-wrap: wrap; /* Allow the images to wrap when the container width is smaller */
     justify-content: space-between; /* Create spacing between images */
+    
 }
 
 /* Style the product section */
@@ -231,6 +361,7 @@ a:link {
     max-width: 1150px; /* Set a maximum width for the product section */
     margin: 0 auto; /* Center the product section horizontally */
     padding: 10px; /* Add some spacing around the products */
+    
 }
 
 /* Style the search bar and button */
@@ -301,7 +432,7 @@ a:link {
     max-width: 300px;
     height: 180px;
     text-align: center;
-    margin-bottom: -20px;
+    margin-bottom: -60px;
 }
 
 .product-list li {
@@ -313,7 +444,7 @@ a:link {
     display: block;
     margin: auto; /* Center the button horizontally */
     padding: 15px 20px;
-    background-color: #007bff; /* Blue color */
+    background-color: #198ac3; /* Blue color */
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -321,7 +452,8 @@ a:link {
 }
 
 .categories-button:hover {
-    background-color: #0056b3; /* Darker blue color on hover */
+    background-color: #135576; /* Darker blue color on hover */
+    transition:all 0.3s ease-in-out;
 }
 
 /* Style the dropdown content */
@@ -358,7 +490,8 @@ a:link {
 
 /* Style the active category link */
 .dropdown-content a.active {
-    background-color: #007bff; /* Blue color */
+    background-color: #198ac3; /* Blue color */
+    border: none;
     color: #fff;
     position: relative; /* Add relative positioning to the active link */
   }
@@ -383,17 +516,24 @@ a:link {
     padding-bottom: 50px; /* Add bottom padding for spacing */
 }
 
+.parallax-text2 {
+    text-align: center; /* Center the content horizontally */
+    padding-top: 20px; /* Add top padding to position the text */
+    padding-bottom: 20px; /* Add bottom padding for spacing */
+    color: #000;
+}
+
 /* Style the green button */
 .green-button {
-    display: inline-block;
-    padding: 20px 30px;
+    display: inline-block;  
+    padding: 15px 20px;
     background-color: #6496cb;
-    border: 8px solid #007bff;
+    border: 4px solid #007bff;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 10px;
-    font-size: 50px;
+    font-size: 30px;
     transition: 0.3s ease-in-out;
 }
 
@@ -550,3 +690,15 @@ header {
     font-weight: bold;
     margin-bottom: 10px;
 }
+
+.footer {
+    background-color: #198ac3;  /* You can change this color */
+    color: #ffffff;  /* Text color */
+    text-align: center;
+    padding: 15px;
+    padding-left: 10%;
+    padding-right: 10%;
+    position: relative;
+    bottom: 0;
+    width: 80%;
+  }

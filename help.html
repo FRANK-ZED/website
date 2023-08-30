@@ -15,20 +15,29 @@
 
 <body>
 
-    <header>
-        <nav>
+    <div class="header-wrapper">
+        <header>
+            <div class="nav-container">
+                <button class="burger-menu" onclick="toggleMenu()">☰</button>
+                <div class="logo">
+                    
+                    <!-- Replace with your logo image if you have one -->
+                    <span><a class="logoText" href="index.html">PandaBuy.Cheap</a></span>
+                </div>
+            </div>
+        </header>
+        <div class="nav-links">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="products.html" class="current-page-bar">Products</a></li>
                 <li><a href="help.html" class="current-page-bar">Help</a></li>
                 <li><a href="support.html" class="current-page-bar">Support</a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </div>
 
-    <!-- Disclaimer Banner -->
     <div class="disclaimer-banner">
-        <p class="disclaimer-text">Disclaimer: I am NOT selling anything on this website. Nor am I planning too. All I'm doing is providing links</p>
+        <p class="disclaimer-text">Disclaimer: This website does not engage in any form of sales or commercial transactions. Its sole purpose is to provide informational links to external sites.</p>
     </div>
     <main class="content">
         <h1 class="titletext">What is Pandabuy?</h1>
@@ -50,9 +59,12 @@
         <p>By following this comprehensive guide, you'll be well-equipped to navigate the process of buying items from Pandabuy. Remember to join relevant communities, utilize our website and available tools, and make informed decisions when selecting products and shipping methods. Happy shopping!</p>
       </main></body>
 
-      <footer>
+      <div class="footer">
         <p>© 2023 Pandabuy.cheap is in no way affiliated with the Pandabuy.com website or brand, the site simply serves the purpose of locating products found on the Pandabuy website.
-             Disclaimer: Please note that this website contains affiliate links, which means I may earn a small commission from qualifying purchases made through those links.
-              This commission helps support the maintenance and development of the website at no additional cost to you. Thank you for your support!</p>
-    </footer>
+            Disclaimer: Please note that this website contains affiliate links, which means I may earn a small commission from qualifying purchases made through those links.
+             This commission helps support the maintenance and development of the website at no additional cost to you. Thank you for your support! </p>
+             <p>Contact Us: pandabuycheap@gmail.com</p>
+
+    </div>
+    <script src="script.js"></script>
 </html>
