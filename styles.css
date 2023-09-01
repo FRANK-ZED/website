@@ -204,6 +204,19 @@ nav li a {
         padding-right: 10px;
         color: white;
     }
+    .categories-button {
+        margin-top: 40px;
+        display: block;
+        margin: auto; /* Center the button horizontally */
+        padding: 15px 20px;
+        background-color: #198ac3; /* Blue color */
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    
  }
   /* Media query for smaller screens (e.g., mobile) */
   @media (max-width: 400px) {
