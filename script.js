@@ -149,3 +149,56 @@ document.addEventListener("DOMContentLoaded", function () {
 
   applyDarkModePreference();
 });
+// Function to save selected currency to localStorage
+function saveSelectedCurrency() {
+  const selectedCurrency = document.getElementById("currencySelector").value;
+  localStorage.setItem("selectedCurrency", selectedCurrency);
+}
+
+// Function to load selected currency from localStorage
+function loadSelectedCurrency() {
+  const savedCurrency = localStorage.getItem("selectedCurrency");
+  if (savedCurrency) {
+    document.getElementById("currencySelector").value = savedCurrency;
+    // Call your function to update prices based on the saved currency
+    updatePriceInChosenCurrency();
+  }
+}
+
+// Event listener for currency selection change
+document.getElementById("currencySelector").addEventListener("change", function() {
+  saveSelectedCurrency();
+  // Call your function to update prices based on the new currency
+  updatePriceInChosenCurrency();
+});
+
+// Load the selected currency when the page loads
+window.addEventListener("load", function() {
+  loadSelectedCurrency();
+});
+
+// Function to update the price in the chosen currency
+function updatePriceInChosenCurrency() {
+  const products = document.querySelectorAll('[data-price-in-cny]');
+  const chosenCurrency = document.getElementById('currencySelector').value;
+
+  const conversionData = {
+      'USD': {rate: 0.14, symbol: '$'},
+      'EUR': {rate: 0.13, symbol: '€'},
+      'GBP': {rate: 0.11, symbol: '£'},
+      'CAD': {rate: 0.19, symbol: '$'},
+      'AUD': {rate: 0.22, symbol: '$'},
+      'NZD': {rate: 0.23, symbol: '$'},
+      // Add more conversion rates here
+  };
+
+  products.forEach(product => {
+      const cnyPrice = parseFloat(product.getAttribute('data-price-in-cny'));
+      const priceInChosenCurrency = cnyPrice * conversionData[chosenCurrency].rate;
+      const priceSpan = product.querySelector('.price-in-chosen-currency');
+      priceSpan.innerHTML = `${chosenCurrency} ${conversionData[chosenCurrency].symbol}${priceInChosenCurrency.toFixed(2)} `;
+  });
+}
+
+// Initial update
+updatePriceInChosenCurrency();

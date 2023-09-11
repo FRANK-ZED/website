@@ -445,7 +445,7 @@ a:link {
     max-width: 300px;
     height: 180px;
     text-align: center;
-    margin-bottom: -60px;
+    margin-bottom: -70px;
 }
 
 .product-list li {
@@ -714,4 +714,13 @@ header {
     position: relative;
     bottom: 0;
     width: 80%;
+  }
+  select {
+    width: 70px;
+    padding: 5px;
+    border: 0px transparent;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    color: #020202;
   }

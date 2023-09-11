@@ -30,11 +30,24 @@
             <div class="nav-container">
                 <button class="burger-menu" onclick="toggleMenu()">☰</button>
                 <div class="logo">
+
+                   
+                    <select id="currencySelector">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="CAD">CAD</option>
+                    <option value="AUD">AUD</option>
+                    <option value="NZD">NZD</option>
+                    </select>
+                  
                     <button id="theme-toggle" class="logo-button">
                         <img id="theme-icon" src="Images\moon-regular-24.png" alt="Toggle Theme">
                     </button>
+                    
                     <!-- Replace with your logo image if you have one -->
                     <span><a class="logoText" href="index.html">PandaBuy.Cheap</a></span>
+                    
                 </div>
             </div>
         </header>
@@ -53,7 +66,7 @@
         <!-- Search bar -->
         <div class="search-center">
             <div class="search-container">
-                <h1 class="searchText"> Find a Product</h1>
+                <br>
                 <form action="#" class="search-form">
                     <input type="text" name="search" id="searchInput" placeholder="Search...">
                     <button type="button" id="searchButton"><i class = "fa fa-search" aria-hidden="true"></i></button>
@@ -83,7 +96,7 @@
             <!-- Nike -->
 
             <!-- Nike Air Jordan 4 (10 Styles)  -->
-            <a href="https://pandabuy.allapp.link/cjor17vm8ngtm8omt18g" target="_blank" class="product shoes">
+            <a href="https://pandabuy.allapp.link/cjv7t0nm8ngjjol9h8eg" target="_blank" class="product shoes">
                 <div class="product-content">
                     <div class="product-images">
                         <img src="Images\Products\shoes\Nike Air Jordan 4.jpg" alt="Nike Air Jordan 4">
@@ -91,7 +104,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Nike Air Jordan 4 (9 Styles)</h2>
-                        <h3>CNY ¥460.00 <br>USD $70</h3>
+                        <h3 data-price-in-cny="460">CNY ¥460.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -105,7 +118,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Nike Air force 1 White</h2>
-                        <h3>CNY ¥120.00 <br>USD $17</h3>
+                        <h3 data-price-in-cny="120">CNY ¥120.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -119,7 +132,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Nike Air force 1 Black</h2>
-                        <h3>CNY ¥120.00 <br>USD $17</h3>
+                        <h3 data-price-in-cny="120">CNY ¥120.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -133,7 +146,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Nike Air force 1 Supreme</h2>
-                        <h3>CNY ¥170.00 <br>USD $24</h3>
+                        <h3 data-price-in-cny="170">CNY ¥170.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -147,7 +160,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Nike Air force 1 Off White (21 Styles)</h2>
-                        <h3>CNY ¥380.00 <br>USD $53</h3>
+                        <h3 data-price-in-cny="380">CNY ¥380.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -163,7 +176,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Nike Dunk Low Retro White Black Panda (2021)</h2>
-                        <h3>CNY ¥190.00 <br>USD $27</h3>
+                        <h3 data-price-in-cny="190">CNY ¥190.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -179,7 +192,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Nike Dunk Low University Blue</h2>
-                        <h3>CNY ¥190.00 <br>USD $27</h3>
+                        <h3 data-price-in-cny="190">CNY ¥190.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -195,7 +208,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Nike Dunk Low University Red</h2>
-                        <h3>CNY ¥190.00 <br>USD $27</h3>
+                        <h3 data-price-in-cny="190">CNY ¥190.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -211,7 +224,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Nike Dunk Low Varsity Green</h2>
-                        <h3>CNY ¥190.00 <br>USD $27</h3>
+                        <h3 data-price-in-cny="190">CNY ¥190.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -227,7 +240,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Nike Dunk Low Vintage Navy</h2>
-                        <h3>CNY ¥190.00 <br>USD $27</h3>
+                        <h3 data-price-in-cny="190">CNY ¥190.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -243,7 +256,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Nike Dunk Low Medium Curry</h2>
-                        <h3>CNY ¥190.00 <br>USD $27</h3>
+                        <h3 data-price-in-cny="190">CNY ¥190.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -259,7 +272,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Nike SB Dunk Low Staple Panda Pigeon (41 Styles)</h2>
-                        <h3>CNY ¥350.00 <br>USD $49</h3>
+                        <h3 data-price-in-cny="350">CNY ¥350.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -275,7 +288,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Nike Air Max 95 (21 Styles)</h2>
-                        <h3>CNY ¥200.00 <br>USD $30</h3>
+                        <h3 data-price-in-cny="200">CNY ¥200.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -291,7 +304,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Nike Air Max Plus (22 Styles)</h2>
-                        <h3>CNY ¥169.00 <br>USD $24</h3>
+                        <h3 data-price-in-cny="169">CNY ¥169.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -307,7 +320,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Nike Air VaporMax Plus (26 Styles)</h2>
-                        <h3>CNY ¥179.00 <br>USD $25</h3>
+                        <h3 data-price-in-cny="179">CNY ¥179.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>  
                 </div>
             </a>
@@ -323,7 +336,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Nike Shox (And Supreme)</h2>
-                        <h3>CNY ¥688.00 <br>USD $95</h3>
+                        <h3 data-price-in-cny="688">CNY ¥688.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -337,7 +350,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Nike Air Jordan 1 Dark Mocha</h2>
-                        <h3>CNY ¥360.00 <br>USD $50</h3>
+                        <h3 data-price-in-cny="360">CNY ¥360.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -354,7 +367,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Jordan 1 High Top (29 Styles)</h2>
-                        <h3>CNY ¥250.00 <br>USD $35</h3>
+                        <h3 data-price-in-cny="250">CNY ¥250.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -370,7 +383,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Jordan 1 Low Top (13 Styles)</h2>
-                        <h3>CNY ¥300.00 <br>USD $42</h3>
+                        <h3 data-price-in-cny="300">CNY ¥300.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -386,7 +399,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Jordan 4 Retro (26 Styles)</h2>
-                        <h3>CNY ¥460.00 <br>USD $64</h3>
+                        <h3 data-price-in-cny="460">CNY ¥460.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -402,7 +415,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Jordan 11 (35 Styles)</h2>
-                        <h3>CNY ¥330.00 <br>USD $46</h3>
+                        <h3 data-price-in-cny="330">CNY ¥330.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -421,7 +434,7 @@
                     </div>
                     <div class="product-text">
                         <h2>New Balance 550 (38 Styles)</h2>
-                        <h3>CNY ¥230.00 <br>USD $32</h3>
+                        <h3 data-price-in-cny="230">CNY ¥230.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -438,7 +451,7 @@
                     </div>
                     <div class="product-text">
                         <h2>New Balance 9060 (25 Styles)</h2>
-                        <h3>CNY ¥250.00 <br>USD $35</h3>
+                        <h3 data-price-in-cny="250">CNY ¥250.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -454,7 +467,7 @@
                     </div>
                     <div class="product-text">
                         <h2>New Balance 2002R (9 Styles)</h2>
-                        <h3>CNY ¥250.00 <br>USD $32</h3>
+                        <h3 data-price-in-cny="250">CNY ¥250.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -471,7 +484,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Adidas Yeezy Boost 350 V2 (28 Styles)</h2>
-                        <h3>CNY ¥150.00 <br>USD $21</h3>
+                        <h3 data-price-in-cny="150">CNY ¥150.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -487,7 +500,7 @@
                     </div>
                     <div class="product-text">
                         <h2>adidas Yeezy Foam RNNR (16 Styles)</h2>
-                        <h3>CNY ¥135.00 <br>USD $19</h3>
+                        <h3 data-price-in-cny="135">CNY ¥135.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -503,7 +516,7 @@
                     </div>
                     <div class="product-text">
                         <h2>adidas Yeezy Slide (18 Styles)</h2>
-                        <h3>CNY ¥110.00 <br>USD $15</h3>
+                        <h3 data-price-in-cny="110">CNY ¥110.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -520,7 +533,7 @@
                     </div>
                     <div class="product-text">
                         <h2>A Bathing Ape Bape Sta (15 Styles)</h2>
-                        <h3>CNY ¥149.00 <br>USD $21.00</h3>
+                        <h3 data-price-in-cny="149">CNY ¥149.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -536,7 +549,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Vans Low Top & High Top (15 Styles)</h2>
-                        <h3>CNY ¥58.00 <br>USD $8</h3>
+                        <h3 data-price-in-cny="58">CNY ¥58.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -552,7 +565,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Rick Owens High Top (11 Styles)</h2>
-                        <h3>CNY ¥418.00 <br>USD $59</h3>
+                        <h3 data-price-in-cny="418">CNY ¥418.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -568,7 +581,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Rick Owens Low Top (17 Styles)</h2>
-                        <h3>CNY ¥258.00 <br>USD $36</h3>
+                        <h3 data-price-in-cny="258">CNY ¥258.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -584,7 +597,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Dior B30 (10 Styles)</h2>
-                        <h3>CNY ¥630.00 <br>USD $88</h3>
+                        <h3 data-price-in-cny="630">CNY ¥630.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -600,7 +613,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Crocs (7 Styles)</h2>
-                        <h3>CNY ¥35.00 <br>USD $5</h3>
+                        <h3 data-price-in-cny="35">CNY ¥35.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -615,7 +628,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Sicko Pain Hoodie Brown</h2>
-                        <h3>CNY ¥168.88 <br>USD $24</h3>
+                        <h3 data-price-in-cny="168">CNY ¥168.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -629,7 +642,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Supreme Kanji Logo Crewneck</h2>
-                        <h3>CNY ¥188.00 <br>USD $26</h3>
+                        <h3 data-price-in-cny="188">CNY ¥188.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -643,7 +656,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Supreme Box Logo Hoodie</h2>
-                        <h3>CNY ¥318.00 <br>USD $45</h3>
+                        <h3 data-price-in-cny="318">CNY ¥318.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -657,7 +670,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Nike Tech Fleece Hoodie</h2>
-                        <h3>CNY ¥129.00 <br>USD $18</h3>
+                        <h3 data-price-in-cny="129">CNY ¥129.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -671,7 +684,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Nike Embroidered Sweater</h2>
-                        <h3>CNY ¥68.00 <br>USD $10</h3>
+                        <h3 data-price-in-cny="68">CNY ¥68.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -685,7 +698,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Nike Mini Swoosh Hoodie</h2>
-                        <h3>CNY ¥78.00 <br>USD $11</h3>
+                        <h3 data-price-in-cny="78">CNY ¥78.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -699,7 +712,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Corteiz Tracksuit Hoodie + Pants</h2>
-                        <h3>CNY ¥388.00 <br>USD $57</h3>
+                        <h3 data-price-in-cny="388">CNY ¥388.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -713,7 +726,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Essentials Fear of God Hoodie</h2>
-                        <h3>CNY ¥78.00 <br>USD $11</h3>
+                        <h3 data-price-in-cny="78">CNY ¥78.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -727,7 +740,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Essentials Hoodie</h2>
-                        <h3>CNY ¥75.80 <br>USD $11</h3>
+                        <h3 data-price-in-cny="75.8">CNY ¥75.80 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -741,7 +754,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Playboi Carti Black Cat Hoodie</h2>
-                        <h3>CNY ¥148.00 <br>USD $21</h3>
+                        <h3 data-price-in-cny="148">CNY ¥148.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -755,7 +768,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Yeezy GAP Style Hoodie</h2>
-                        <h3>CNY ¥229.00 <br>USD $32</h3>
+                        <h3 data-price-in-cny="229">CNY ¥229.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -769,7 +782,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Yeezy Gap Engineered by Balenciaga Dove Hoodie</h2>
-                        <h3>CNY ¥499.00 <br>USD $70</h3>
+                        <h3 data-price-in-cny="499">CNY ¥499.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -783,7 +796,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Donda Vest</h2>
-                        <h3>CNY ¥118.00 <br>USD $17</h3>
+                        <h3 data-price-in-cny="118">CNY ¥118.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -797,7 +810,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Sp5der Websuit Hoodies (And More)</h2>
-                        <h3>CNY ¥150.00 <br>USD $21</h3>
+                        <h3 data-price-in-cny="150">CNY ¥150.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -811,7 +824,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Chrome Hearts Hoodies (24 Styles)</h2>
-                        <h3>CNY ¥178.00 <br>USD $25</h3>
+                        <h3 data-price-in-cny="178">CNY ¥178.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -825,7 +838,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Bape Hoodies (70 Styles)</h2>
-                        <h3>CNY ¥125.00 <br>USD $18</h3>
+                        <h3 data-price-in-cny="125">CNY ¥125.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -839,7 +852,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Unbranded Hoodies (18 Styles)</h2>
-                        <h3>CNY ¥90.00 <br>USD $13</h3>
+                        <h3 data-price-in-cny="90">CNY ¥90.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -853,7 +866,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Bape Embroidered Hoodie</h2>
-                        <h3>CNY ¥208.00 <br>USD $29</h3>
+                        <h3 data-price-in-cny="208">CNY ¥208.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -867,7 +880,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Vuja De DVD Logo Hoodie</h2>
-                        <h3>CNY ¥229.00 <br>USD $32</h3>
+                        <h3 data-price-in-cny="229">CNY ¥229.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -881,7 +894,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Represent Hoodie</h2>
-                        <h3>CNY ¥150.00 <br>USD $35</h3>
+                        <h3 data-price-in-cny="150">CNY ¥150.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -895,7 +908,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Stussy x CPFM 8 Ball Pigment Dyed Hoodie Blue</h2>
-                        <h3>CNY ¥178.00 <br>USD $25</h3>
+                        <h3 data-price-in-cny="178">CNY ¥178.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -909,7 +922,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Stussy Fleece 8 Ball Sherpa</h2>
-                        <h3>CNY ¥515.00 <br>USD $71</h3>
+                        <h3 data-price-in-cny="515">CNY ¥515.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -923,7 +936,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Stussy Knit Sweater</h2>
-                        <h3>CNY ¥148.00 <br>USD $21</h3>
+                        <h3 data-price-in-cny="148">CNY ¥148.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -937,7 +950,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Stussy Knit Sweater Dice</h2>
-                        <h3>CNY ¥228.00 <br>USD $32</h3>
+                        <h3 data-price-in-cny="228">CNY ¥228.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -952,7 +965,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Off-White Ruined Factory Sweater</h2>
-                        <h3>CNY ¥44.60 <br>USD $6</h3>
+                        <h3 data-price-in-cny="44.60">CNY ¥44.60 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -966,7 +979,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Kaws x North Face Crew Neck</h2>
-                        <h3>CNY ¥77.00 <br>USD $11</h3>
+                        <h3 data-price-in-cny="77">CNY ¥77.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -980,7 +993,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Mastermind Knit Sweater</h2>
-                        <h3>CNY ¥168.00 <br>USD $24</h3>
+                        <h3 data-price-in-cny="168">CNY ¥168.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -996,7 +1009,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Stussy T-Shirts (99+ Styles)</h2>
-                        <h3>CNY ¥59.99 <br>USD $8</h3>
+                        <h3 data-price-in-cny="59.99">CNY ¥59.99 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1010,7 +1023,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Stussy x CPFM Heart T-Shirt</h2>
-                        <h3>CNY ¥66.66 <br>USD $9</h3>
+                        <h3 data-price-in-cny="66.66">CNY ¥66.66 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1024,7 +1037,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Nike x Stussy International T-Shirt</h2>
-                        <h3>CNY ¥42.00 <br>USD $6</h3>
+                        <h3 data-price-in-cny="42.00">CNY ¥42.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1038,7 +1051,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Stussy Shattered T-Shirts</h2>
-                        <h3>CNY ¥69.00 <br>USD $10</h3>
+                        <h3 data-price-in-cny="69.00">CNY ¥69.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1052,7 +1065,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Stussy Spider Man T-Shirt</h2>
-                        <h3>CNY ¥49.90 <br>USD $7</h3>
+                        <h3 data-price-in-cny="49.90">CNY ¥49.90 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>   
@@ -1066,7 +1079,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Revenge T-Shirts (98 Styles)</h2>
-                        <h3>CNY ¥63.00 <br>USD $9</h3>
+                        <h3 data-price-in-cny="63.00">CNY ¥63.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1080,7 +1093,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Vlone T-Shirts (99+ Styles)</h2>
-                        <h3>CNY ¥42.00 <br>USD $6</h3>
+                        <h3 data-price-in-cny="42.00">CNY ¥42.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1094,7 +1107,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Gallery Dept T-Shirts (5 Styles)</h2>
-                        <h3>CNY ¥52.00 <br>USD $8</h3>
+                        <h3 data-price-in-cny="52.00">CNY ¥52.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1108,7 +1121,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Gallery Dept. Drive Thru Boxy Fit T-Shirts (2 Styles)</h2>
-                        <h3>CNY ¥98.00 <br>USD $14</h3>
+                        <h3 data-price-in-cny="98.00">CNY ¥98.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1122,7 +1135,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Los Pollos Hermanos T-Shirts</h2>
-                        <h3>CNY ¥68.80 <br>USD $10</h3>
+                        <h3 data-price-in-cny="68.80">CNY ¥68.80 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1137,7 +1150,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Corteiz T-Shirts (55 Styles)</h2>
-                        <h3>CNY ¥90.00 <br>USD $13</h3>
+                        <h3 data-price-in-cny="90.00">CNY ¥90.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1151,7 +1164,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Supreme Motion Logo T-Shirts (7 Styles)</h2>
-                        <h3>CNY ¥50.00 <br>USD $7</h3>
+                        <h3 data-price-in-cny="50.00">CNY ¥50.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1165,7 +1178,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Chrome Hearts T-Shirts (56 Styles)</h2>
-                        <h3>CNY ¥88.00 <br>USD $12</h3>
+                        <h3 data-price-in-cny="88.00">CNY ¥88.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1179,7 +1192,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Kanye West Late Registration T-Shirt</h2>
-                        <h3>CNY ¥85.00 <br>USD $12</h3>
+                        <h3 data-price-in-cny="85">CNY ¥85.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1193,7 +1206,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Essentials T-Shirts (9 Styles)</h2>
-                        <h3>CNY ¥53.00 <br>USD $8</h3>
+                        <h3 data-price-in-cny="53">CNY ¥53.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1207,7 +1220,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Football Jerseys (24 Styles)</h2>
-                        <h3>CNY ¥40.00 <br>USD $6</h3>
+                        <h3 data-price-in-cny="40">CNY ¥40.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1222,7 +1235,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Essentials Trackpants (4 Styles)</h2>
-                        <h3>CNY ¥189.00 <br>USD $27</h3>
+                        <h3 data-price-in-cny="189">CNY ¥189.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1236,7 +1249,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Carhartt Carpenter Pants Brown</h2>
-                        <h3>CNY ¥135.00 <br>USD $19</h3>
+                        <h3 data-price-in-cny="135">CNY ¥135.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1250,7 +1263,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Carhartt Carpenter Pants Black</h2>
-                        <h3>CNY ¥135.00 <br>USD $19</h3>
+                        <h3 data-price-in-cny="135">CNY ¥135.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1264,7 +1277,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Chrome Hearts Pants</h2>
-                        <h3>CNY ¥104.47 <br>USD $17</h3>
+                        <h3 data-price-in-cny="104.47">CNY ¥104.47 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1278,7 +1291,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Chrome Hearts Carpenter Pants</h2>
-                        <h3>CNY ¥128.00 <br>USD $18</h3>
+                        <h3 data-price-in-cny="128">CNY ¥128.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1292,7 +1305,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Corteiz Cargo Pants</h2>
-                        <h3>CNY ¥268.00 <br>USD $38</h3>
+                        <h3 data-price-in-cny="268">CNY ¥268.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1306,7 +1319,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Minus Two Cargo Pants #1</h2>
-                        <h3>CNY ¥225.00 <br>USD $33</h3>
+                        <h3 data-price-in-cny="225">CNY ¥225.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1320,7 +1333,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Minus Two Cargo Pants #2</h2>
-                        <h3>CNY ¥250.00 <br>USD $36</h3>
+                        <h3 data-price-in-cny="250">CNY ¥250.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1334,7 +1347,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Unbranded Cargo Pants</h2>
-                        <h3>CNY ¥99.00 <br>USD $14</h3>
+                        <h3 data-price-in-cny="99">CNY ¥99.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1348,7 +1361,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Unbranded Cargo Pants #2</h2>
-                        <h3>CNY ¥143.00 <br>USD $20</h3>
+                        <h3 data-price-in-cny="143">CNY ¥143.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1362,7 +1375,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Unbranded Baggy Pants</h2>
-                        <h3>CNY ¥165.00 <br>USD $23</h3>
+                        <h3 data-price-in-cny="165">CNY ¥165.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1376,7 +1389,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Polar Big Boy Jeans</h2>
-                        <h3>CNY ¥200.00 <br>USD $28</h3>
+                        <h3 data-price-in-cny="200">CNY ¥200.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1390,7 +1403,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Dime Jeans</h2>
-                        <h3>CNY ¥179.00 <br>USD $25</h3>
+                        <h3 data-price-in-cny="179">CNY ¥179.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1404,7 +1417,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Travis Scott Trackpants</h2>
-                        <h3>CNY ¥169.00 <br>USD $24</h3>
+                        <h3 data-price-in-cny="169">CNY ¥169.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1418,7 +1431,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Supreme X Burberry Jeans</h2>
-                        <h3>CNY ¥200.00 <br>USD $28</h3>
+                        <h3 data-price-in-cny="200">CNY ¥200.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1432,7 +1445,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Amiri Jeans White</h2>
-                        <h3>CNY ¥168.00 <br>USD $23</h3>
+                        <h3 data-price-in-cny="168">CNY ¥168.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1446,7 +1459,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Gallery Dept Jeans</h2>
-                        <h3>CNY ¥158.00 <br>USD $22</h3>
+                        <h3 data-price-in-cny="158">CNY ¥158.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1460,7 +1473,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Gallery Dept Pants (and More)</h2>
-                        <h3>CNY ¥175.00 <br>USD $24</h3>
+                        <h3 data-price-in-cny="175">CNY ¥175.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1474,7 +1487,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Nike Tech Fleece Pants (25 Styles)</h2>
-                        <h3>CNY ¥95.00 <br>USD $13</h3>
+                        <h3 data-price-in-cny="95">CNY ¥95.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1488,7 +1501,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Corteiz Tracksuit Pants + Hoodie</h2>
-                        <h3>CNY ¥388.00 <br>USD $57</h3>
+                        <h3 data-price-in-cny="388">CNY ¥388.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1505,7 +1518,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Corteiz Shorts</h2>
-                        <h3>CNY ¥150.00 <br>USD $23</h3>
+                        <h3 data-price-in-cny="150">CNY ¥150.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1519,7 +1532,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Stussy Washed Shorts</h2>
-                        <h3>CNY ¥89.00 <br>USD $13</h3>
+                        <h3 data-price-in-cny="89">CNY ¥89.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1533,7 +1546,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Palm Angel Shorts Synthetic (43 Styles)</h2>
-                        <h3>CNY ¥50.00 <br>USD $7</h3>
+                        <h3 data-price-in-cny="50">CNY ¥50.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1547,7 +1560,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Palm Angel Shorts Synthetic #2</h2>
-                        <h3>CNY ¥65.00 <br>USD $9</h3>
+                        <h3 data-price-in-cny="65">CNY ¥65.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1561,7 +1574,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Palm Angel Shorts Cotton</h2>
-                        <h3>CNY ¥70.00 <br>USD $10</h3>
+                        <h3 data-price-in-cny="70">CNY ¥70.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1575,7 +1588,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Stussy Swim Shorts</h2>
-                        <h3>CNY ¥95.00 <br>USD $13</h3>
+                        <h3 data-price-in-cny="95">CNY ¥95.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1592,7 +1605,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Stussy Mask Jacquard Fleece Jacket</h2>
-                        <h3>CNY ¥266.00 <br>USD $37</h3>
+                        <h3 data-price-in-cny="266">CNY ¥266.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1606,7 +1619,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Trapstar Puffer Jacket (6 Styles)</h2>
-                        <h3>CNY ¥388.00 <br>USD $54</h3>
+                        <h3 data-price-in-cny="388">CNY ¥388.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1620,7 +1633,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Trapstar Puffer Vest</h2>
-                        <h3>CNY ¥275.00 <br>USD $38</h3>
+                        <h3 data-price-in-cny="275">CNY ¥275.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1634,7 +1647,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Trapstar Windbreaker Jacket</h2>
-                        <h3>CNY ¥240.00 <br>USD $33</h3>
+                        <h3 data-price-in-cny="240">CNY ¥240.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1648,7 +1661,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Moncler Spider Puffer Jacket</h2>
-                        <h3>CNY ¥590.00 <br>USD $83</h3>
+                        <h3 data-price-in-cny="590">CNY ¥590.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1662,7 +1675,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Moncler Maya Jacket Black</h2>
-                        <h3>CNY ¥800.00 <br>USD $112</h3>
+                        <h3 data-price-in-cny="800">CNY ¥800.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1676,7 +1689,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Moncler Maya Jacket (9 Styles)</h2>
-                        <h3>CNY ¥589.00 <br>USD $83</h3>
+                        <h3 data-price-in-cny="589">CNY ¥589.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1690,7 +1703,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Moncler Vest</h2>
-                        <h3>CNY ¥388.00 <br>USD $54</h3>
+                        <h3 data-price-in-cny="388">CNY ¥388.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1705,6 +1718,7 @@
                     <div class="product-text">
                         <h2>North Face Windbreaker Jacket</h2>
                         <h3>CNY ¥89.00 <br>USD $13</h3>
+                        <h3 data-price-in-cny="89">CNY ¥89.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1718,7 +1732,7 @@
                     </div>
                     <div class="product-text">
                         <h2>North Face Puffer Jacket #1 (13 Styles)</h2>
-                        <h3>CNY ¥370.00 <br>USD $52</h3>
+                        <h3 data-price-in-cny="370">CNY ¥370.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1732,7 +1746,7 @@
                     </div>
                     <div class="product-text">
                         <h2>North Face Puffer Jacket #2 (11 Styles)</h2>
-                        <h3>CNY ¥398.00 <br>USD $56</h3>
+                        <h3 data-price-in-cny="398">CNY ¥398.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1746,7 +1760,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Cheap North Face Puffer Jacket (14 Styles)</h2>
-                        <h3>CNY ¥140.00 <br>USD $20</h3>
+                        <h3 data-price-in-cny="140">CNY ¥140.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1760,7 +1774,7 @@
                     </div>
                     <div class="product-text">
                         <h2>North Face Puffer Vest #1</h2>
-                        <h3>CNY ¥68.00 <br>USD $10</h3>
+                        <h3 data-price-in-cny="68">CNY ¥68.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1774,7 +1788,7 @@
                     </div>
                     <div class="product-text">
                         <h2>North Face Puffer Vest #2</h2>
-                        <h3>CNY ¥300.00 <br>USD $42</h3>
+                        <h3 data-price-in-cny="300">CNY ¥300.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1788,7 +1802,7 @@
                     </div>
                     <div class="product-text">
                         <h2>North Face X KAWS Nuptse Puffer Jacket</h2>
-                        <h3>CNY ¥390.00 <br>USD $55</h3>
+                        <h3 data-price-in-cny="390">CNY ¥390.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1804,7 +1818,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Louis Vuitton Wallet</h2>
-                        <h3>CNY ¥120.00 <br>USD $17</h3>
+                        <h3 data-price-in-cny="120">CNY ¥120.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1818,7 +1832,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Louis Vuitton Belts (37 Styles)</h2>
-                        <h3>CNY ¥40.00 <br>USD $6</h3>
+                        <h3 data-price-in-cny="40">CNY ¥40.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1832,7 +1846,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Chrome Hearts Belts</h2>
-                        <h3>CNY ¥219.00 <br>USD $31</h3>
+                        <h3 data-price-in-cny="219">CNY ¥219.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1846,7 +1860,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Off White Belts</h2>
-                        <h3>CNY ¥58.56 <br>USD $8</h3>
+                        <h3 data-price-in-cny="58.56">CNY ¥58.56 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1860,7 +1874,7 @@
                     </div>
                     <div class="product-text">
                         <h2>BB Belts</h2>
-                        <h3>CNY ¥158.00 <br>USD $22</h3>
+                        <h3 data-price-in-cny="158">CNY ¥158.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1874,7 +1888,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Skull BB Belts</h2>
-                        <h3>CNY ¥188.00 <br>USD $26</h3>
+                        <h3 data-price-in-cny="188">CNY ¥188.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1888,7 +1902,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Versace Belts</h2>
-                        <h3>CNY ¥49.00 <br>USD $7</h3>
+                        <h3 data-price-in-cny="49">CNY ¥49.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1902,7 +1916,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Vivienne Westwood Belt</h2>
-                        <h3>CNY ¥99.00 <br>USD $14</h3>
+                        <h3 data-price-in-cny="99">CNY ¥99.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1916,7 +1930,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Jordan Monogram Duffle bag</h2>
-                        <h3>CNY ¥189.00 <br>USD $26</h3>
+                        <h3 data-price-in-cny="189">CNY ¥189.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1931,7 +1945,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Stussy Beanies (11 Styles)</h2>
-                        <h3>CNY ¥37.60 <br>USD $5</h3>
+                        <h3 data-price-in-cny="37.60">CNY ¥37.60 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1945,7 +1959,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Stussy Shoulder Bag #1</h2>
-                        <h3>CNY ¥18.80 <br>USD $2.50</h3>
+                        <h3 data-price-in-cny="18.80">CNY ¥18.80 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1959,7 +1973,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Stussy Shoulder Bag #2</h2>
-                        <h3>CNY ¥38.00 <br>USD $5.00</h3>
+                        <h3 data-price-in-cny="38">CNY ¥38.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1973,7 +1987,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Prada Sunglasses</h2>
-                        <h3>CNY ¥22.00 <br>USD $3.00</h3>
+                        <h3 data-price-in-cny="22">CNY ¥22.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -1987,7 +2001,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Bape Socks (63 Styles)</h2>
-                        <h3>CNY ¥38.60 <br>USD $6</h3>
+                        <h3 data-price-in-cny="38.60">CNY ¥38.60 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -2001,7 +2015,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Nike Socks Black & White</h2>
-                        <h3>CNY ¥9.90 <br>USD $1.40</h3>
+                        <h3 data-price-in-cny="9.90">CNY ¥9.90 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -2015,7 +2029,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Nike Socks (21 Styles)</h2>
-                        <h3>CNY ¥3.89 <br>USD $0.50</h3>
+                        <h3 data-price-in-cny="3.89">CNY ¥3.89 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -2029,7 +2043,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Supreme Socks</h2>
-                        <h3>CNY ¥38.00 <br>USD $5</h3>
+                        <h3 data-price-in-cny="38">CNY ¥38.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -2043,7 +2057,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Nike NBA Socks</h2>
-                        <h3>CNY ¥12.90 <br>USD $1.80</h3>
+                        <h3 data-price-in-cny="12.90">CNY ¥12.90 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -2057,7 +2071,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Carhartt Socks</h2>
-                        <h3>CNY ¥9.90 <br>USD $1.40</h3>
+                        <h3 data-price-in-cny="9.90">CNY ¥9.90 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -2071,7 +2085,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Vetements Socks</h2>
-                        <h3>CNY ¥12.00 <br>USD $1.70</h3>
+                        <h3 data-price-in-cny="12">CNY ¥12.00 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
@@ -2085,7 +2099,7 @@
                     </div>
                     <div class="product-text">
                         <h2>Shoe Crease Protector</h2>
-                        <h3>CNY ¥5.23 <br>USD $0.70</h3>
+                        <h3 data-price-in-cny="5.23">CNY ¥5.23 <br><span class="price-in-chosen-currency">[Placeholder]</span></h3>
                     </div>
                 </div>
             </a>
