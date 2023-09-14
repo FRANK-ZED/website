@@ -249,7 +249,9 @@ h1 {
 .welcomeText{
     font-size: 40px;
     margin: 0; /* Remove default margin for h1 element */
-    color: white;
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px 4px black;
+    
 }
 h2{
     color: black;
