@@ -5,6 +5,7 @@
     --product-border: none;
     --product-background-color: none;       
     --searchText-color: #000000;
+    --titletext-color: #000000;
   }
   
   .dark-mode {
@@ -14,6 +15,7 @@
     --product-border: none; /* Dark mode product border */
     --product-background-color: rgb(0, 0, 0);
     --searchText-color: #ffffff;
+    --titletext-color: #ffffff;
   }
 
 
@@ -58,7 +60,6 @@ body {
 }
 
 .nav-container {
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -72,13 +73,20 @@ body {
     border: none;
     outline: none;
     color: #fff;
+    margin-right: auto; /* Pushes everything else to the right */
 }
 
 .nav-links {
-    display: none; /* Initially hidden */
     background-color: #1a3a75; /* Lighter shade */
     width: 100%;
     position: relative; /* Relative to header-wrapper */
+    max-height: 0;
+    overflow-y: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.nav-links.open {
+    max-height: 200px; /* Adjust this value based on your actual content height */
 }
 
 .nav-links ul {
@@ -698,7 +706,7 @@ header {
 
   .titletext {
     text-align: center;
-    color: #161616;
+    color: var(--titletext-color);
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -724,3 +732,20 @@ header {
     font-size: 16px;
     color: #020202;
   }
+  .currency-selector {
+    margin-left: 10px; /* Adjust as needed */
+    margin-right: auto; /* Pushes it to the left, right after the burger menu */
+  }
+
+  .left-container, .right-container {
+    display: flex;
+    align-items: center;
+}
+
+.left-container select {
+    margin-left: 10px; /* Adds some space between the burger menu and the currency selector */
+}
+
+.right-container button {
+    margin-right: 10px; /* Adds some space between the dark mode button and the link */
+}

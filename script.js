@@ -202,3 +202,18 @@ function updatePriceInChosenCurrency() {
 
 // Initial update
 updatePriceInChosenCurrency();
+
+document.addEventListener("DOMContentLoaded", function () {
+    const navLinks = document.querySelector('.nav-links');
+    const burgerMenu = document.querySelector('.burger-menu');
+
+    function toggleMenu() {
+        if (navLinks.style.maxHeight && navLinks.style.maxHeight !== '0px') {
+            navLinks.style.maxHeight = '0px';
+        } else {
+            navLinks.style.maxHeight = navLinks.scrollHeight + "px";
+        }
+    }
+
+    burgerMenu.addEventListener("click", toggleMenu);
+});

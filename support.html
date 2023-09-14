@@ -28,10 +28,21 @@
     <div class="header-wrapper">
         <header>
             <div class="nav-container">
-                <button class="burger-menu" onclick="toggleMenu()">☰</button>
-                <div class="logo">
-                    
-                    <!-- Replace with your logo image if you have one -->
+                <div class="left-container">
+                    <button class="burger-menu" onclick="toggleMenu()">☰</button>
+                    <select id="currencySelector">
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="GBP">GBP</option>
+                        <option value="CAD">CAD</option>
+                        <option value="AUD">AUD</option>
+                        <option value="NZD">NZD</option>
+                    </select>
+                </div>
+                <div class="right-container">
+                    <button id="theme-toggle" class="logo-button">
+                        <img id="theme-icon" src="Images\moon-regular-24.png" alt="Toggle Theme">
+                    </button>
                     <span><a class="logoText" href="index.html">PandaBuy.Cheap</a></span>
                 </div>
             </div>
@@ -62,7 +73,7 @@
             At PandaBuy.Cheap, we're committed to making fashion accessible to everyone. Happy shopping!
         </p>
         <div class="support-section">
-            <h2>Support Me</h2>
+            <h1 class="titletext">Support Me</h1>
             <br>
             <p>
                 Creating and maintaining a fully functional website with a vast product selection is a significant endeavor.
@@ -74,7 +85,7 @@
             </div>
             <br>
             <br>
-            <h2>Follow Us On Social Media</h2>
+            <h1 class="titletext">Follow Us On Social Media</h1>
             <br>
             <a class="follow-link" href="https://www.tiktok.com/@official_pandabuy.cheap?is_from_webapp=1&sender_device=pc" target="_blank">TikTok</a>
             <p>

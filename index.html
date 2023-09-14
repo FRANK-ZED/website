@@ -28,12 +28,21 @@
     <div class="header-wrapper">
         <header>
             <div class="nav-container">
-                <button class="burger-menu" onclick="toggleMenu()">☰</button>
-                <div class="logo">
+                <div class="left-container">
+                    <button class="burger-menu" onclick="toggleMenu()">☰</button>
+                    <select id="currencySelector">
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="GBP">GBP</option>
+                        <option value="CAD">CAD</option>
+                        <option value="AUD">AUD</option>
+                        <option value="NZD">NZD</option>
+                    </select>
+                </div>
+                <div class="right-container">
                     <button id="theme-toggle" class="logo-button">
                         <img id="theme-icon" src="Images\moon-regular-24.png" alt="Toggle Theme">
                     </button>
-                    <!-- Replace with your logo image if you have one -->
                     <span><a class="logoText" href="index.html">PandaBuy.Cheap</a></span>
                 </div>
             </div>
