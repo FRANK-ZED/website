@@ -23,3 +23,14 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+    body {
+        font-size: 0.7em; /* Adjust the font size for mobile */
+    }
+
+    a {
+        font-size: 1.5em;
+    }
+}
